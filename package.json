@@ -153,7 +153,7 @@
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
-    "codelyzer": "~2.1.1",
+    "codelyzer": "~4.2.1",
     "concurrently": "^3.4.0",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.0",
