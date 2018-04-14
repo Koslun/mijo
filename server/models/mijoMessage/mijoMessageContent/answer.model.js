@@ -10,6 +10,7 @@ const AnswerSchema = new Schema({
   yesAnswer: { type: Boolean },
   textAnswerArray: { type: [String] },
   scaleAnswer: { type: Number },
+  question: { type: Schema.Types.ObjectId, ref: 'QuestionType', required: true },
 });
 
 /**

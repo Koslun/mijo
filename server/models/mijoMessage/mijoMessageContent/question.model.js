@@ -9,7 +9,6 @@ const QuestionSchema = new Schema({
   title: { type: String, required: true },
   questionType: { type: Schema.Types.ObjectId, ref: 'QuestionType', required: true },
   soundFile: { type: File },
-  answers: { type: [Schema.Types.ObjectId] },
 });
 
 /**

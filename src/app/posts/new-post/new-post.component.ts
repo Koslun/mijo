@@ -25,6 +25,7 @@ export class NewPostComponent {
     });
     this.apollo = apollo;
   }
+
   public save() {
     if (!this.form.valid) return;
     this.apollo
@@ -44,7 +45,7 @@ export class NewPostComponent {
       })
       .take(1)
       .subscribe({
-        next: ({ data }) => {
+        next: ({data}) => {
           console.log("got a new post", data);
           // get new data
           this.router.navigate(["/posts"]);

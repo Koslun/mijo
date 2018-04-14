@@ -36,6 +36,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import "../styles/styles.scss";
 import "../styles/headings.css";
+import { HttpClientModule } from '@angular/common/http';
 
 // Application wide providers
 const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState];
@@ -67,6 +68,7 @@ type StoreType = {
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    HttpClientModule,
     MatToolbarModule,
     MatCardModule,
     MatListModule,
@@ -83,7 +85,8 @@ type StoreType = {
   providers: [ENV_PROVIDERS, APP_PROVIDERS]
 })
 export class AppModule {
-  constructor(public appRef: ApplicationRef, public appState: AppState) {}
+  constructor(public appRef: ApplicationRef, public appState: AppState) {
+  }
 
   public hmrOnInit(store: StoreType) {
     if (!store || !store.state) {
