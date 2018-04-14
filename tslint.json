@@ -56,7 +56,7 @@
     "pipe-naming": [
       true,
       "camelCase",
-      "n"
+      "m"
     ],
     "use-host-property-decorator": false,
     "use-input-property-decorator": true,
