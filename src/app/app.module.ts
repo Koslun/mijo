@@ -14,7 +14,8 @@ import {
   MatToolbarModule,
   MatCardModule,
   MatListModule,
-  MatGridListModule
+  MatGridListModule,
+  MatButtonModule
 } from "@angular/material";
 import "hammerjs";
 
@@ -73,6 +74,7 @@ type StoreType = {
     MatCardModule,
     MatListModule,
     MatGridListModule,
+    MatButtonModule,
     RouterModule.forRoot(ROUTES, {
       useHash: false,
       preloadingStrategy: PreloadAllModules
