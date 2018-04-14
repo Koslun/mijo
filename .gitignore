@@ -57,6 +57,8 @@ npm-debug.log
 /compiled/
 dll/
 
+/server/assets
+
 # Doc #
 /doc/
 
