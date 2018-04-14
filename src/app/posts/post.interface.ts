@@ -1,4 +1,4 @@
 export interface IPost {
-    postId: number;
-    title: string;
+  postId: number;
+  title: string;
 }

@@ -1,8 +1,8 @@
-import { ApolloClient, createNetworkInterface } from 'apollo-client';
+import { ApolloClient, createNetworkInterface } from "apollo-client";
 
 const clientConfig = new ApolloClient({
   networkInterface: createNetworkInterface({
-    uri: '/api/graphql'
+    uri: "/api/graphql"
   })
 });
 

@@ -1,29 +1,29 @@
 export interface UpdatePostInterface {
   updatePost: {
-    id:string,
-    title:string | null,
-    content:string
-  }
+    id: string;
+    title: string | null;
+    content: string;
+  };
 }
 
 export interface DeletePostInterface {
   removePost: {
-    id:string,
-    title:string | null
-  }
+    id: string;
+    title: string | null;
+  };
 }
 
 export interface PostsInterface {
   posts: Array<{
-    title: string | null,
-    content: string | null
+    title: string | null;
+    content: string | null;
   }> | null;
 }
 
 export interface PostByIdInterface {
-    post:{
-      id: string,
-      title: string | null,
-      content: string | null
-  }
+  post: {
+    id: string;
+    title: string | null;
+    content: string | null;
+  };
 }

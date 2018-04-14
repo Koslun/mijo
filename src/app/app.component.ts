@@ -1,23 +1,17 @@
 /**
  * Angular 2 decorators and services
  */
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation
-} from '@angular/core';
-import { AppState } from './app.service';
-import { PostsService } from './posts/posts.service';
+import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { AppState } from "./app.service";
+import { PostsService } from "./posts/posts.service";
 /**
  * App Component
  * Top Level Component
  */
 @Component({
-  selector: 'app',
+  selector: "app",
   encapsulation: ViewEncapsulation.None,
-  styleUrls: [
-    './app.component.scss'
-  ],
+  styleUrls: ["./app.component.scss"],
   template: `
     <header>
       <mat-toolbar color="primary">
@@ -34,18 +28,15 @@ import { PostsService } from './posts/posts.service';
   providers: [PostsService]
 })
 export class AppComponent implements OnInit {
-  public angularclassLogo = 'assets/img/angularclass-avatar.png';
-  public name = 'Mean stack starter';
-  public url = 'https://mean.io';
+  public angularclassLogo = "assets/img/angularclass-avatar.png";
+  public name = "Mean stack starter";
+  public url = "https://mean.io";
 
-  constructor(
-    public appState: AppState
-  ) { }
+  constructor(public appState: AppState) {}
 
   public ngOnInit() {
-    console.log('Initial App State', this.appState.state);
+    console.log("Initial App State", this.appState.state);
   }
-
 }
 
 /**

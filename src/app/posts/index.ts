@@ -1,1 +1,1 @@
-export { PostsModule } from './posts.module';
+export { PostsModule } from "./posts.module";

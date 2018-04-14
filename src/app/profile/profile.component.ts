@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Apollo } from 'apollo-angular';
-import gql from 'graphql-tag';
+import { Component, OnInit } from "@angular/core";
+import { Apollo } from "apollo-angular";
+import gql from "graphql-tag";
 
 const CurrentProfile = gql`
   query CurrentProfile {
@@ -11,12 +11,12 @@ const CurrentProfile = gql`
   }
 `;
 
-interface QueryResponse{
-  profile
+interface QueryResponse {
+  profile;
 }
 
 @Component({
-  selector: 'profile',
+  selector: "profile",
   template: `
     <div class="profile">
         <div class="header">Profile</div>
@@ -32,20 +32,22 @@ interface QueryResponse{
             Dictum conubia consectetur curae amet ultrices lorem orci mauris ligula sit torquent</div>
     </div>
   `,
-  styleUrls: ['./profile.component.css']
+  styleUrls: ["./profile.component.css"]
 })
 export class ProfileComponent implements OnInit {
   currentProfile: any;
 
   constructor(private apollo: Apollo) {
-    this.currentProfile = {}
+    this.currentProfile = {};
   }
 
   ngOnInit() {
-    this.apollo.watchQuery<QueryResponse>({
-      query: CurrentProfile
-    }).subscribe(({data}) => {
-      this.currentProfile = data.profile;
-    });
+    this.apollo
+      .watchQuery<QueryResponse>({
+        query: CurrentProfile
+      })
+      .subscribe(({ data }) => {
+        this.currentProfile = data.profile;
+      });
   }
 }
