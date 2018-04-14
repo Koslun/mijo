@@ -25,7 +25,7 @@ nav a {
 @include mat-core();
 
 $primary: mat-palette($mat-light-blue);
-$accent:  mat-palette($mat-amber, A200, A100, A400);
+$accent: mat-palette($mat-amber, A200, A100, A400);
 
 $theme: mat-light-theme($primary, $accent);
 
@@ -33,8 +33,8 @@ $theme: mat-light-theme($primary, $accent);
 
 .m2app-dark {
   $dark-primary: mat-palette($mat-pink, 700, 500, 900);
-  $dark-accent:  mat-palette($mat-blue-grey, A200, A100, A400);
-  $dark-warn:    mat-palette($mat-deep-orange);
+  $dark-accent: mat-palette($mat-blue-grey, A200, A100, A400);
+  $dark-warn: mat-palette($mat-deep-orange);
 
   $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
